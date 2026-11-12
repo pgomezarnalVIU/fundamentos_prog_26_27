@@ -21,7 +21,7 @@ print(nombre_completo)
 edad = 50
 edad_str = str(edad)
 concatenar_str_num = nombre_completo + " " + str(edad)
-mensaje = "Hola, mi nombre es {} y tengo {} años".format(nombre_completo,edad)
+mensaje = "Hola, mi nombre es {} y tengo {} años".format(nombre_completo, edad)
 print(concatenar_str_num)
 print(mensaje)
 
