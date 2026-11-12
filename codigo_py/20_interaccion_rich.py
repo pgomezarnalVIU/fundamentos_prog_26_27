@@ -11,7 +11,10 @@ console = Console()
 
 # Pedir al usuario que introduzca los datos del jugador de basket
 nombre = Prompt.ask("Introduce el nombre del jugador")
-edad = IntPrompt.ask("Introduce la edad del jugador (en años)", default=18)
+
+edad = IntPrompt.ask("Introduce la edad del jugador (en años. Mayor 18)", default=18)
+while edad<18:
+    edad = IntPrompt.ask("Introduce la edad del jugador (en años. Mayor 18)", default=18)
 altura = FloatPrompt.ask("Introduce la altura del jugador (en metros)", default=1.80)
 posicion = Prompt.ask("Introduce la posicion del jugador", choices=["Base", "Escolta",
                                                                     "Alero", "Ala-pivot", "Pivot"])
