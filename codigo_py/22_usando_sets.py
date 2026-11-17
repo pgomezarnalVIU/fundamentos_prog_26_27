@@ -26,5 +26,9 @@ segunda_lista.sort()
 print(segunda_lista)
 
 # Creamos np a partir de una lista
-datos = np.array(lista)
-np.savetxt('datos_v2.csv', datos, delimiter=';')
+lista_columnas = [lista]
+print(lista_columnas)
+datos = np.array(lista_columnas)
+# Las dimensiones de datos
+print(datos)
+np.savetxt('datos_v2.csv', datos, fmt="%d", delimiter=',')
